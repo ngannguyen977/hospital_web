@@ -84,19 +84,31 @@ a:hover {
 }
 .txt-blue{color:#0242be;}
 .txt-blue-light{color:#34c3f9;}
+.txt-small{font-size: 13px;}
+.txt-big{font-size: 20px;}
 .no-margin {
     margin: 0;
 }
 .big-txt{font-size: 22px;
     font-weight: 300;}
-  .red-btn{
+.red-btn{
     background: #fe0d25;
     border-radius: 30px;
     padding: 10px 35px;
   }
+.btn-gradient{
+  background: -webkit-linear-gradient(to left, #3f2b96, #a8c0ff);
+    background: linear-gradient(to left, #42a8f0, #5485e5);
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    padding:  10px 20px;
+}
 /* WORKFLOW */
 .workflow {
-  
+  align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
 .wf-item{
   background: -webkit-linear-gradient(to left, #3f2b96, #a8c0ff);
@@ -110,6 +122,16 @@ a:hover {
 }
 .workflow span{
     
+}
+/* DOCTOR */
+.doctor{margin: 50px 0;}
+.doc-item{
+  text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 11px solid #ddd;
+}
+.doc-img{
+  background: #d7ecfa;
 }
 /*--------------------------------------------------------------
 # Intro Section
