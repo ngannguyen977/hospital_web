@@ -149,6 +149,7 @@
 
 })(jQuery);
 
+
 $(document).ready(function(){
 
 
@@ -217,6 +218,27 @@ $(document).ready(function(){
 	}
 	toggle_video_modal();
 
-
-
+});
+jQuery(document).ready(function($) {
+"use strict";
+$('#customers-testimonials').owlCarousel( {
+		loop: true,
+	    margin: 30,
+	    dots: true,
+	    nav: true,
+	    items: 2,
+	 	 autoplay: true,
+		autoplayTimeout: 8500,
+		smartSpeed: 450,
+  		navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1
+			},
+			1170: {
+				items: 2
+			}
+			
+		}
+	});
 });
