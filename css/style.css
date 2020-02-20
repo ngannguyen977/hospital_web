@@ -169,7 +169,12 @@ section{/* margin: 100px 0; */}
 .doc-img{
   background: #d7ecfa;
 }
-.doc-img img{width: 80%;    padding-top: 20px;}
+.doc-img img{
+  width: 80%;
+    padding-top: 20px;
+    height: 250px;
+    object-fit: contain;
+}
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -529,17 +534,16 @@ iframe#youtube {
     height: 270px;
 }
 .schedule-form {
-    position: absolute;
-    bottom: -60px;
+    position: relative;
+    margin-top: -100px;
     z-index: 9;
     right: 0;
     left: 0;
-    width: 60%;
-    margin: 0 auto;
+    
     background: #ddd;
-    border-radius: 30px;
-        padding-top: 28px;
-    padding-bottom: 28px;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background: #5485e5;
     background: -webkit-linear-gradient(to left, #3f2b96, #a8c0ff);
     background: linear-gradient(to left, #42a8f0, #5485e5);
@@ -662,7 +666,7 @@ nav > div a.nav-item.nav-link:focus
 }
 .news-right h4{font-size: 20px;}
 .news-right .news-img{
-      height: 300px;
+      height: 200px;
     object-fit: cover;
     width: 100%;
 }
@@ -680,7 +684,7 @@ nav > div a.nav-item.nav-link:focus
 .news .owl-carousel .owl-item img {
     display: block;
     width: 100%;
-    height: 300px;
+    height: 200px;
     object-fit: cover;
 }
 /* NEW LETTER */
@@ -770,6 +774,12 @@ nav > div a.nav-item.nav-link:focus
     padding: 0 8%;
 }
 .top-navbar  img{width: 20px;margin-right: -10px;}
+.img-slider{
+      position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+}
 .sl-nav {
   display: inline;
 }
@@ -1018,7 +1028,7 @@ nav > div a.nav-item.nav-link:focus
 
 
 .overlay {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0px;
     padding: 0;
@@ -1633,9 +1643,7 @@ section.intro.intro-carousel{margin: 0;}
 }
 
 .intro .intro-body {
-  align-items: center;
-    position: absolute;
-    bottom: 160px;
+    position: relative;
 }
 
 .intro .intro-body .price-a {
