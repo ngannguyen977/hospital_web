@@ -56,7 +56,7 @@
                 </div>
             </div>
         </div>
-         <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
             <div class="main-menu">
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
@@ -103,94 +103,126 @@
             <div class="hotline sm-none"><i class="flaticon-car"></i>19008189</div>
         </nav>
         <!--/ END MAIN MENU /-->
-        <!-- SPECIALIST -->
-        <div class="specialist">
-            <section class="header-sub-bg">
-                
-            </section>
-            <section class="specialist-box">
+       <div class="doctor">
+            <section class="header-sub-bg"></section>
+            <section class="search-sec">
                 <div class="container">
-                    <div class="mr-30 sub-title">
+                    <div class="sub-title">
                         <h3 class="txt-big">PERFECT HOSPITAL</h3>
-                        <h4>CHUYÊN KHOA</h4>
+                        <h4>ĐỘI NGŨ BÁC SĨ</h4>
                     </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="specialist-item">
-                                <i class="flaticon-care"></i><p>KHOA TIM MẠCH</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="specialist-item">
-                                <i class="flaticon-ear"></i><p>KHOA TAI MŨI HỌNG</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="specialist-item">
-                                <i class="flaticon-stomach"></i><p>KHOA TIÊU HÓA</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="specialist-item">
-                                <i class="flaticon-bone"></i><p>KHOA XƯƠNG KHỚP</p>
-                            </div>
-                        </div>
+                    <div class="wrap-search">
+                       <div class="search">
+                          <select name="slct" id="slct">
+                            <option selected disabled>Chọn chuyên khoa</option>
+                            <option value="1">Khoa tim mạch</option>
+                            <option value="2">Khoa xương khớp</option>
+                            <option value="3">Khoa tiêu hóa</option>
+                          </select>
+                          <button type="submit" class="searchButton">
+                            <img src="icon/search.svg" />
+                         </button>
+                       </div>
+                       <div class="clearfix"></div>
                     </div>
                 </div>
             </section>
-            <section class="specialist-list">
+            <section class="doctor-content">
                 <div class="container">
-                    <!-- <h3 class="txt-big">DANH SÁCH CHUYÊN KHOA</h3> -->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="specialist-list-item">
-                                <h5 class="title-item">Khoa nội</h5>
-                                <ul>
-                                    <li><img src="icon/db-arrow.svg" /> Khoa Cấp Cứu</li>
-                                    <li><img src="icon/db-arrow.svg" /> Khoa Cấp Cứu</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nội Đa Khoa</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nhi và Nhi sơ sinh</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Cấp Cứu</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nội Đa Khoa</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nhi và Nhi sơ sinh</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Cấp Cứu</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nội Đa Khoa</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nhi và Nhi sơ sinh</li>
-                                </ul>
-                            </div>
+                   
+                     <div class="row doctor-item">
+                        <div class="col-md-3">
+                           <div class="doctor-img">
+                               <img class="img-fluid" src="img/doctors/doctor04.png" alt="">
+                               <a class="btn-gradient">Đặt hẹn</a>
+                           </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="specialist-list-item">
-                                <h5 class="title-item grey-bg">Khoa ngoại</h5>
-                                <ul>
-                                    <li><img src="icon/db-arrow.svg" /> Khoa Cấp Cứu</li>
-                                    <li><img src="icon/db-arrow.svg" /> Khoa Cấp Cứu</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nội Đa Khoa</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nhi và Nhi sơ sinh</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Cấp Cứu</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nội Đa Khoa</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nhi và Nhi sơ sinh</li>
-                                   
-                                </ul>
-                            </div>
+                        <div class="col-md-9">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="tbl-left">Họ tên:</td>
+                                        <td class="tbl-right doctor-name">Nguyễn Minh Tuấn</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tbl-left ">Chuyên khoa:</td>
+                                        <td class="tbl-right">Tim mạch</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tbl-left">Chuyên môn:</td>
+                                        <td class="tbl-right">Thạc sĩ Nôi khoa, Trường Đại học Y khoa Phạm Ngọc Thạch, thành phố Hồ Chí Minh, Việt Nam, 2016</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tbl-left">Kinh nghiệm:</td>
+                                        <td class="tbl-right">Bác sĩ phó khoa, Khoa Điện sinh lý tim và Rối loạn nhịp tim, Bệnh Viện Tim Tâm Đức, Thành phố Hồ Chí Minh, Việt Nam, 4/2009 – 2016</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                       <div class="col-md-4">
-                            <div class="specialist-list-item">
-                                <h5 class="title-item">Các gói khám định kì</h5>
-                                 <ul>
-                                    <li><img src="icon/db-arrow.svg" /> Khoa Cấp Cứu</li>
-                                    <li><img src="icon/db-arrow.svg" /> Khoa Cấp Cứu</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nội Đa Khoa</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Nhi và Nhi sơ sinh</li>
-                                    <li><img src="icon/db-arrow.svg" />Khoa Cấp Cứu</li>
-                                    
-                                </ul>
-                            </div>
+                    </div>
+                     <div class="row doctor-item">
+                        <div class="col-md-3">
+                           <div class="doctor-img">
+                               <img class="img-fluid" src="img/doctors/doctor04.png" alt="">
+                               <a class="btn-gradient">Đặt hẹn</a>
+                           </div>
+                        </div>
+                        <div class="col-md-9">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="tbl-left" >Họ tên:</td>
+                                        <td class="tbl-right doctor-name">Nguyễn Minh Tuấn</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tbl-left">Chuyên khoa:</td>
+                                        <td class="tbl-right">Tim mạch</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tbl-left">Chuyên môn:</td>
+                                        <td class="tbl-right">Thạc sĩ Nôi khoa, Trường Đại học Y khoa Phạm Ngọc Thạch, thành phố Hồ Chí Minh, Việt Nam, 2016</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tbl-left">Kinh nghiệm:</td>
+                                        <td class="tbl-right">Bác sĩ phó khoa, Khoa Điện sinh lý tim và Rối loạn nhịp tim, Bệnh Viện Tim Tâm Đức, Thành phố Hồ Chí Minh, Việt Nam, 4/2009 – 2016</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                     <div class="row doctor-item">
+                        <div class="col-md-3">
+                           <div class="doctor-img">
+                               <img class="img-fluid" src="img/doctors/doctor04.png" alt="">
+                               <a class="btn-gradient">Đặt hẹn</a>
+                           </div>
+                        </div>
+                        <div class="col-md-9">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="tbl-left">Họ tên:</td>
+                                        <td class="tbl-right doctor-name">Nguyễn Minh Tuấn</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tbl-left">Chuyên khoa:</td>
+                                        <td class="tbl-right">Tim mạch</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tbl-left">Chuyên môn:</td>
+                                        <td class="tbl-right">Thạc sĩ Nôi khoa, Trường Đại học Y khoa Phạm Ngọc Thạch, thành phố Hồ Chí Minh, Việt Nam, 2016</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tbl-left">Kinh nghiệm:</td>
+                                        <td class="tbl-right">Bác sĩ phó khoa, Khoa Điện sinh lý tim và Rối loạn nhịp tim, Bệnh Viện Tim Tâm Đức, Thành phố Hồ Chí Minh, Việt Nam, 4/2009 – 2016</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
+       </div>
     </div>
 </div>
 <!-- FOOTER -->

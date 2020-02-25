@@ -12,9 +12,9 @@
     text-align: center;
     margin-bottom: 50px;
 }
-.title-box span{
-    font-weight: bold;
-}
+.title-box span{font-weight: bold;}
+.sub-title{text-align: center;padding-top: 30px;}
+.grey-bg{background: #c2cbd4 !important;}
 .title-boxout-box{
     margin:  30px 0;
     position: relative;
@@ -147,17 +147,26 @@
 }
 /* SPECIALIST */
 /****************************************/
+.specialist-list-item .title-item{text-align: center;}
+.specialist-list-item ul{
+    padding: 40px 0 30px 0;
+    line-height: 25px;
+}
 .specialist-box{background: #eceff3;padding: 50px 0;}
 .specialist-list h3{
     text-align: center;
     padding: 40px 0;
 }
+.specialist-list{padding-bottom:100px;}
+
 .specialist-item i::before{
-    font-size: 30px;
+    font-size: 40px;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
+.specialist-item p{font-size: 20px;}
 .title-item{
     background: #ced4da;
-    padding: 25px 20px;
+    padding: 18px 20px;
     margin: 0 -15px;
 }
 .specialist-item{
@@ -165,8 +174,9 @@
     height: 170px;
     color: #fff;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
     border-radius: 20px;
+    background: linear-gradient(to left, #42a8f0, #3e74b3);
 }
 /* CONTACT  */
 .heading-banner {
@@ -195,3 +205,102 @@
     margin: 70px 0 80px 0;
     position: relative;
 }
+/* DOCTOR */
+.doctor-content{margin-top: 50px;}
+.wrap-search {
+    width: 92%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    max-width: 550px;
+    min-width: 270px;
+}
+.search{
+    position: relative;
+}
+.search-sec{
+    background: #ebebeb;
+}
+.search select{
+    width: 100%;
+    height: 40px;
+    color: #777;
+    border: 1px solid #ddd;
+}
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 1px solid #DDD;
+    padding: 5px 5px 5px 15px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+}
+.searchButton {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 40px;
+    border: 1px solid #41a3ea;
+    background: #40a2e8;
+    text-align: center;
+    color: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.doctor-img img{
+        display: block;
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    object-fit: contain;
+}
+.tbl-left{
+    border-bottom: 1px dotted #b5babf;
+    border-right: 1px dotted #b5babf;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.tbl-right{
+   border-bottom: 1px dotted #b5babf;
+    padding: 10px;
+    font-size: 15px;
+}
+.doctor-name{
+    font-weight: bold;
+    color: #4774a6;
+}
+.doctor-item{
+    border: 5px solid #dee2e6;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+/* NEWS */
+#exTab1 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+.sub-tab .nav-tabs{
+    justify-content: center;
+    background: #ced4da;
+}
+.news-left{position: relative;}
+.news-left span{
+        background: rgba(0, 123, 255, 0.67);
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    width: 60%;
+    color: #fff;
+    padding: 20px;
+}
+.news-page .tab-content{padding: 60px 0;}

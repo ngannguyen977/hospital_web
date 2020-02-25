@@ -687,14 +687,14 @@ nav > div a.nav-item.nav-link.active{
   background: linear-gradient(to left, #42a8f0, #387dcb);
 
 }
-.tab-content{
+.main-tab{
   background: url("../img/services/ser01.jpg") no-repeat center right;
     border-top: 1px solid #fff;
     position: relative;
     background-size: cover;
         height: 50vh;
 }
-.tab-content img{width: 100%;}
+.main-tab img{width: 100%;}
 .news-bottom {margin-top: 20px;}
 nav > div a.nav-item.nav-link:hover,
 nav > div a.nav-item.nav-link:focus
@@ -1490,9 +1490,15 @@ nav > div a.nav-item.nav-link:focus
   font-size: 40px;
  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
+.specialist-list-item img{
+  opacity: .7;
+    width: 20px;
+
+}
  .workflow-content i::before {
     font-size: 35px;
 }
+
 .arrow-ico::before{text-shadow: none !important;}
 .navbar-default.navbar-trans .nav-link,
 .navbar-default.navbar-reduce .nav-link {
@@ -2487,10 +2493,10 @@ footer .credits {
     color: #fff;
     border-radius: 25px;
     text-align: center;
-    color: #fff;
+    color: #fff !important;
     padding: 8px 40px;
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .btn-no-border{color:#fff;float: right;margin-top: 20px;}
