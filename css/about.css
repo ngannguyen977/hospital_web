@@ -1,11 +1,31 @@
 
 /***** Top content *****/
+.mr-80{margin-top: 80px;margin-bottom: 80px;}
 .header-sub-bg {
     width: 100%;
-    height: 250px;
+    height: 350px;
     object-fit: cover;
-    /* margin-bottom: 50px; */
-    background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%), url("../img/header-bg.jpg");
+    background:/*  linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%),  */
+    url("../img/header-bg.jpg") center center;
+        margin-bottom: 80px;
+        position: relative;
+}
+.navigation-page{
+  position: absolute;
+    top: 50%;
+    left: 15%;
+    z-index: 9;
+    font-size: 30px;
+    color: #003fbc;
+    font-weight: bold;
+
+}
+.small-title{
+
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
 }
 .top-content { width: 100%; padding-top: 100px; }
 .title-box{
@@ -205,6 +225,7 @@
     margin: 70px 0 80px 0;
     position: relative;
 }
+.contact-address h4{font-weight: bold;}
 /* DOCTOR */
 .doctor-content{margin-top: 50px;}
 .wrap-search {
@@ -304,3 +325,44 @@
     padding: 20px;
 }
 .news-page .tab-content{padding: 60px 0;}
+.news-page .nav-tabs .nav-link.active{
+    background: linear-gradient(to left, #42a8f0, #2d5c93);
+    color: #fff;
+    border-color: transparent;
+    border-radius: 0;
+    border: 0;
+}
+/* DETAIL PAGE */
+.detail-img{margin: 30px 0;}
+.right-content{
+    background: #ebebeb;
+    padding: 20px;
+        border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.right-content-img img{margin-bottom:20px;}
+.right-content ul{padding:0;}
+.right-content h5{    color: #2e5e95;}
+.right-content ul li{
+    border-bottom: 1px solid #ced4da;
+    padding: 10px 0;
+}
+.advice{
+    background: linear-gradient(to left, #42a8f0, #2d5c93);
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+}
+.advice img{
+        position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 18%;
+}
+.right-content-info img{
+    width: 20px;
+    opacity: .5;
+    margin-right: 10px;
+}

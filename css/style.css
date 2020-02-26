@@ -3,7 +3,7 @@
 /*======================================
 //--//-->   STYLES GENERALES
 ======================================*/
-
+html{height: 100%;width:100%;}
 body {
     font-family: 'Poppins', sans-serif;
     color: #555555;
@@ -104,6 +104,21 @@ section{/* margin: 100px 0; */}
     background: linear-gradient(-45deg, #5bf3fd, #143559);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.chat{
+    right: 0;
+    position: fixed;
+    bottom: 100px;
+}
+.chat img{
+  width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+.chat p{
+      font-size: 20px;
+    font-weight: bold;
+    color: #398bf4;
 }
 .no-margin {
     margin: 0;
@@ -894,8 +909,8 @@ nav > div a.nav-item.nav-link:focus
 
 .hero-section,
 .hero-section > .container > .row {
-  height: 100vh;
-  min-height: 880px;
+ height: 75vh;
+    min-height: 650px;
 }
 
 .hero-section.inner-page {
