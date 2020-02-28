@@ -10,8 +10,8 @@
         <link href="img/favicon.png" rel="icon">
         <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-        <!-- Bootstrap CSS File -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
         <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Libraries CSS Files -->
         <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -30,13 +30,13 @@
     <body>
         <!--/ MAIN MENU/-->
         <div class="top-navbar">
-            <div class="pull-left flex-display"><i class="flaticon-pulse"></i><span class="sm-none">CỔNG THÔNG TIN</span></div>
+            <a class="pull-left flex-display"><i class="flaticon-pulse"></i><span class="sm-none">CỔNG THÔNG TIN</span></a>
             <div class="top-right pull-right flex-display">
-                <div class="flex-display">
+                <div class="flex-display CP-display">
                     <i class="flaticon-wall-clock"></i><span>Hỗ trợ: &nbsp;</span>
                     <small>19008989</small>
                 </div>
-                <div class="flex-display">
+                <div class="flex-display CP-display">
                     <i class="flaticon-doctor"></i><span>Bác sĩ trực:&nbsp;</span>
                     <small>19008989</small>
                 </div>
@@ -47,8 +47,8 @@
                             <li>ENG<i class="fa fa-angle-down" aria-hidden="true"></i>
                                 <div class="triangle"></div>
                                 <ul>
-                                    <li><i class="sl-flag flag-de"><div id="germany"></div></i> <span class="active">Vietnam</span></li>
-                                    <li><i class="sl-flag flag-usa"><div id="germany"></div></i> <span>Englisch</span></li>
+                                    <li><i class="sl-flag flag-vn"><div id="germany"></div></i> <span class="active">Vietnam</span></li>
+                                    <li><i class="sl-flag flag-eng"><div id="germany"></div></i> <span>Englisch</span></li>
                                 </ul>
                             </li>
                         </ul>
@@ -73,7 +73,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">VỀ CHÚNG TÔI</a>
                         </li>
-                       <li class="nav-item dropdown">
+                        <li class="nav-item dropdown">
                             
                             <a  class="nav-link btn btn-default dropdown-toggle" href="specialist.html" id="navbarDropdown">
                                 THÔNG TIN CHO BỆNH NHÂN
@@ -100,7 +100,7 @@
                                 <a class="dropdown-item" href="detail.html">Khoa nhi</a>
                             </div>
                         </li>
-                       <!--  <li class="nav-item">
+                        <!--  <li class="nav-item">
                             <a class="nav-link" href="contact.html">TIN TỨC</a>
                         </li> -->
                         <li class="nav-item">
@@ -113,118 +113,116 @@
         </nav>
         <!--/ END MAIN MENU /-->
         <div class="about">
-
-            </section>
-            <section>
-                <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
-                            <div class="carousel-item-b">
-                                <img src="img/about/ab03.jpg" alt="">
-                            </div>
-                            <div class="carousel-item-b">
-                                <img src="img/slide-3.jpg" alt="">
-                            </div>
-                            <div class="carousel-item-b">
-                                <img src="img/slide-1.jpg" alt="">
-                            </div>
+        </section>
+        <section>
+            <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
+                <div class="carousel-item-b">
+                    <img src="img/about/ab03.jpg" alt="">
+                </div>
+                <div class="carousel-item-b">
+                    <img src="img/slide-3.jpg" alt="">
+                </div>
+                <div class="carousel-item-b">
+                    <img src="img/slide-1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="row about-box foo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="about-intro">
+                            <i class="flaticon-doctor"></i>
+                            <p>Hơn 500 nhân sự</p>
                         </div>
-            </section>
-            <div class="row about-box foo">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="about-intro">
-                                <i class="flaticon-doctor"></i>
-                                <p>Hơn 500 nhân sự</p>
-                            </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="about-intro">
+                            <i class="flaticon-front-desk"></i>
+                            <p>Với 10 chuyên khoa</p>
                         </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="about-intro">
-                                <i class="flaticon-front-desk"></i>
-                                <p>Với 10 chuyên khoa</p>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="about-intro">
-                                <i class="flaticon-hospital-1"></i>
-                                <p>Hơn 100 phòng khám</p>
-                            </div>
+                        
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="about-intro">
+                            <i class="flaticon-hospital-1"></i>
+                            <p>Hơn 100 phòng khám</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <section class="property-single nav-arrow-b">
-                <div class="container">
-                        <div class="about-staff">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-6">
-                                    <div class="about-doc-img">
-                                        <img class="img-fluid" src="img/doctors/doctor04.png" alt="">
-                                        <span class="big-circle"></span>
-                                        <span class="small-circle"></span>
-                                    </div>
+        </div>
+        <section class="property-single nav-arrow-b">
+            <div class="container">
+                <div class="about-staff">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="about-doc-img">
+                                <img class="img-fluid" src="img/doctors/doctor04.png" alt="">
+                                <span class="big-circle"></span>
+                                <span class="small-circle"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="about-doc-info">
+                                <div class="mr-30">
+                                    <h3 class="title-agent">TIẾN SĨ - BÁC SĨ</h3>
+                                    <h4>Chủ tịch hội đồng quản trị</h4>
                                 </div>
-                                <div class="col-md-6 col-lg-6">
-                                    <div class="about-doc-info">
-                                        <div class="mr-30">
-                                            <h3 class="title-agent">TIẾN SĨ - BÁC SĨ</h3>
-                                            <h4>Chủ tịch hội đồng quản trị</h4>
-                                        </div>
-                                        <p class="color-text-a mr-30">
-                                            Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-                                            dui. Quisque velit nisi,
-                                            pretium ut lacinia in, elementum id enim.
-                                        </p>
-                                       
-                                        <div class="socials-a">
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a href="#">
-                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a href="#">
-                                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a href="#">
-                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a href="#">
-                                                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a href="#">
-                                                        <i class="fa fa-dribbble" aria-hidden="true"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p class="color-text-a mr-30">
+                                    Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                                    dui. Quisque velit nisi,
+                                    pretium ut lacinia in, elementum id enim.
+                                </p>
                                 
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="title-box">
-                                <h1 class="txt-big">PERFECT HOSPITAL</h1>
-                                <span class="color-text-a">Video</span>
-                            </div>
-                           <div class="video-wrapper">
-                                <div class="video-container">
-                                    <div class="js-video ng-isolate-scope" >
-                                        <div class="video-poster">
-                                        </div>
-                                        <div class="play"><i class="fa fa-play-circle"></i></div>
-                                    </div>
+                                <div class="socials-a">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
+                            </div>
                         </div>
-
+                        
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="title-box">
+                        <h1 class="txt-big">PERFECT HOSPITAL</h1>
+                        <span class="color-text-a">Video</span>
+                    </div>
+                    <div class="video-wrapper">
+                        <div class="video-container">
+                            <div class="js-video ng-isolate-scope" >
+                                <div class="video-poster">
+                                </div>
+                                <div class="play"><i class="fa fa-play-circle"></i></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="about-images">
@@ -233,10 +231,18 @@
                     <span class="color-text-a">Hình ảnh</span>
                 </div>
                 <div class="about-img">
-                    <div class="about-img-item"><img class="" src="img/news/8.jpg" /></div>
-                    <div class="about-img-item"><img class="" src="img/news/n01.jpg" /></div>
-                    <div class="about-img-item"><img class="" src="img/news/8.jpg" /></div>
-                    <div class="about-img-item"><img class="" src="img/news/n02.jpg" /></div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="about-img-item"><img class="" src="img/news/8.jpg" /></div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="about-img-item"><img class="" src="img/news/n01.jpg" /></div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="about-img-item"><img class="" src="img/news/8.jpg" /></div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="about-img-item"><img class="" src="img/news/n02.jpg" /></div>
+                    </div>
                 </div>
             </section>
         </div>
