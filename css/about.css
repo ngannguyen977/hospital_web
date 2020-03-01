@@ -12,7 +12,7 @@
 .navigation-page{
   position: absolute;
     top: 50%;
-    left: 15%;
+    left: 8%;
     z-index: 9;
     font-size: 30px;
     color: #003fbc;
@@ -32,7 +32,9 @@
     margin-bottom: 50px;
 }
 .title-box span{font-weight: bold;}
-.sub-title{text-align: center;padding-top: 30px;}
+.sub-title{text-align: center;padding-top: 20px;
+    padding-bottom: 30px;
+}
 .grey-bg{background: #c2cbd4 !important;}
 .title-boxout-box{
     margin:  30px 0;
@@ -168,7 +170,8 @@
 }
 /* SPECIALIST */
 /****************************************/
-.specialist-list-item .title-item{text-align: center;}
+.specialist-list-item .title-item{text-align: center;font-size: 16px;
+    font-weight: bold;}
 .specialist-list-item ul{
     padding: 40px 0 30px 0;
     line-height: 25px;
@@ -192,10 +195,10 @@
 }
 .specialist-item{
     background: #40a0e7;
-    height: 170px;
+    height: 150px;
     color: #fff;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
     border-radius: 20px;
     background: linear-gradient(to left, #42a8f0, #3e74b3);
 }
@@ -300,6 +303,18 @@
     background: #fff;
 }
 /* NEWS */
+.news-title{
+    font-size: 16px;
+}
+.news-list img{
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.news-item{
+    margin-bottom: 30px;
+}
 #exTab1 .tab-content {
   color : white;
   background-color: #428bca;
@@ -334,6 +349,7 @@
     border: 0;
 }
 /* DETAIL PAGE */
+.detail-title{margin-bottom: 30px;}
 .detail-img{margin: 30px 0;}
 .right-content{
     background: #ebebeb;
@@ -341,6 +357,7 @@
         border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+.right-content hr{margin-bottom: 0;}
 .right-content-img img{margin-bottom:20px;}
 .right-content ul{padding:0;}
 .right-content h5{    color: #2e5e95;}
@@ -356,11 +373,12 @@
     margin-top: 20px;
     padding: 20px;
 }
+.advice h2, .advice p{color:#fff;}
 .advice img{
         position: absolute;
     right: 20px;
     bottom: 20px;
-    width: 18%;
+    width: 70px;
 }
 .right-content-info img{
     width: 20px;
@@ -369,4 +387,5 @@
 }
 @media (max-width:768px){
     .specialist-item{margin-bottom: 20px;}
+    .right-content{margin-top: 30px;}
 }

@@ -10,7 +10,10 @@
         <link href="img/favicon.png" rel="icon">
         <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS File -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
         <!-- Bootstrap CSS File -->
         <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Libraries CSS Files -->
@@ -23,20 +26,17 @@
         <!-- Main Stylesheet File -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/about.css" rel="stylesheet">
-        <!-- =======================================================
-        
-        ======================================================= -->
     </head>
     <body>
         <!--/ MAIN MENU/-->
         <div class="top-navbar">
-            <div class="pull-left flex-display"><i class="flaticon-pulse"></i><span class="sm-none">CỔNG THÔNG TIN</span></div>
+            <a class="pull-left flex-display"><i class="flaticon-pulse"></i><span class="sm-none">CỔNG THÔNG TIN</span></a>
             <div class="top-right pull-right flex-display">
-                <div class="flex-display">
+                <div class="flex-display CP-display">
                     <i class="flaticon-wall-clock"></i><span>Hỗ trợ: &nbsp;</span>
                     <small>19008989</small>
                 </div>
-                <div class="flex-display">
+                <div class="flex-display CP-display">
                     <i class="flaticon-doctor"></i><span>Bác sĩ trực:&nbsp;</span>
                     <small>19008989</small>
                 </div>
@@ -47,8 +47,8 @@
                             <li>ENG<i class="fa fa-angle-down" aria-hidden="true"></i>
                                 <div class="triangle"></div>
                                 <ul>
-                                    <li><i class="sl-flag flag-de"><div id="germany"></div></i> <span class="active">Vietnam</span></li>
-                                    <li><i class="sl-flag flag-usa"><div id="germany"></div></i> <span>Englisch</span></li>
+                                    <li><i class="sl-flag flag-vn"><div id="germany"></div></i> <span class="active">Vietnam</span></li>
+                                    <li><i class="sl-flag flag-eng"><div id="germany"></div></i> <span>Englisch</span></li>
                                 </ul>
                             </li>
                         </ul>
@@ -86,7 +86,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog-grid.html">BÁC SĨ</a>
+                            <a class="nav-link" href="doctor.html">BÁC SĨ</a>
                         </li>
                         <li class="nav-item dropdown">
                             
@@ -100,9 +100,9 @@
                                 <a class="dropdown-item" href="detail.html">Khoa nhi</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                       <!--  <li class="nav-item">
                             <a class="nav-link" href="contact.html">TIN TỨC</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">LIÊN HỆ</a>
                         </li>
@@ -131,31 +131,72 @@
                     <div class="tab-content">
                         <div class="tab-pane active" id="tabs-1" role="tabpanel">
                             <div class="row">
-                                <div class="col-md-8 news-left">
+                                <div class="col-lg-8 col-md-6 news-left">
                                     <img  class="img-fluid" src="img/news/n02.jpg"/>
                                     <span class="news-text">Mọi công ty và hợp đồng bảo hiểm đều khác nhau và tìm hiểu kỹ hợp đồng là điều rất quan trọng. Hãy tìm hiểu về các trường hợp loại trừ phổ biến, không được bồi thường tùy vào từng hợp đồng bảo hiểm của Bệnh viện</span>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-lg-4 col-md-6">
                                      <img class="img-fluid" src="img/news/n02.jpg"/>
+                                     <h4 class="news-title">HỘI THẢO “PHƯƠNG PHÁP MỚI ĐỂ ĐÁNH GIÁ NHỮNG RỦI RO VỀ TIM MẠCH VÀ ĐÁNH GIÁ ĐIỂM VÔI HÓA XƠ VỮA ĐỘNG MẠCH VÀNH”</h4>
                                     <span class="news-text">Mọi công ty và hợp đồng bảo hiểm đều khác nhau và tìm hiểu kỹ hợp đồng là điều rất quan trọng. Hãy tìm hiểu về các trường hợp loại trừ phổ biến, không được bồi thường tùy vào từng hợp đồng bảo hiểm của Bệnh viện</span>
                                 </div>
                             </div>
                             <br>
-                            <div class="row">
-                                <div class="col-md-4">
+                            <div class="row news-list">
+                                <div class="col-lg-4 col-md-6 news-item">
                                      <img class="img-fluid" src="img/news/n02.jpg"/>
+                                    <h4 class="news-title">HỘI THẢO “PHƯƠNG PHÁP MỚI ĐỂ ĐÁNH GIÁ NHỮNG RỦI RO VỀ TIM MẠCH VÀ ĐÁNH GIÁ ĐIỂM VÔI HÓA XƠ VỮA ĐỘNG MẠCH VÀNH”</h4>
                                     <span class="news-text">Mọi công ty và hợp đồng bảo hiểm đều khác nhau và tìm hiểu kỹ hợp đồng là điều rất quan trọng. Hãy tìm hiểu về các trường hợp loại trừ phổ biến, không được bồi thường tùy vào từng hợp đồng bảo hiểm của Bệnh viện</span>
                                 </div>
-                                 <div class="col-md-4">
-                                     <img class="img-fluid" src="img/news/n02.jpg"/>
+                                 <div class="col-lg-4 col-md-6 news-item">
+                                     <img class="img-fluid" src="img/news/n01.jpg"/>
+                                     <h4 class="news-title">HỘI THẢO “PHƯƠNG PHÁP MỚI ĐỂ ĐÁNH GIÁ NHỮNG RỦI RO VỀ TIM MẠCH VÀ ĐÁNH GIÁ ĐIỂM VÔI HÓA XƠ VỮA ĐỘNG MẠCH VÀNH”</h4>
                                     <span class="news-text">Mọi công ty và hợp đồng bảo hiểm đều khác nhau và tìm hiểu kỹ hợp đồng là điều rất quan trọng. Hãy tìm hiểu về các trường hợp loại trừ phổ biến, không được bồi thường tùy vào từng hợp đồng bảo hiểm của Bệnh viện</span>
                                 </div>
-                                 <div class="col-md-4">
+                                 <div class="col-lg-4 col-md-6 news-item">
+                                     <img class="img-fluid" src="img/news/new01.jpg"/>
+                                     <h4 class="news-title">HỘI THẢO “PHƯƠNG PHÁP MỚI ĐỂ ĐÁNH GIÁ NHỮNG RỦI RO VỀ TIM MẠCH VÀ ĐÁNH GIÁ ĐIỂM VÔI HÓA XƠ VỮA ĐỘNG MẠCH VÀNH”</h4>
+                                    <span class="news-text">Mọi công ty và hợp đồng bảo hiểm đều khác nhau và tìm hiểu kỹ hợp đồng là điều rất quan trọng. Hãy tìm hiểu về các trường hợp loại trừ phổ biến, không được bồi thường tùy vào từng hợp đồng bảo hiểm của Bệnh viện</span>
+                                </div>
+                                <div class="col-lg-4 col-md-6 news-item">
                                      <img class="img-fluid" src="img/news/n02.jpg"/>
+                                    <h4 class="news-title">HỘI THẢO “PHƯƠNG PHÁP MỚI ĐỂ ĐÁNH GIÁ NHỮNG RỦI RO VỀ TIM MẠCH VÀ ĐÁNH GIÁ ĐIỂM VÔI HÓA XƠ VỮA ĐỘNG MẠCH VÀNH”</h4>
+                                    <span class="news-text">Mọi công ty và hợp đồng bảo hiểm đều khác nhau và tìm hiểu kỹ hợp đồng là điều rất quan trọng. Hãy tìm hiểu về các trường hợp loại trừ phổ biến, không được bồi thường tùy vào từng hợp đồng bảo hiểm của Bệnh viện</span>
+                                </div>
+                                 <div class="col-lg-4 col-md-6 news-item">
+                                     <img class="img-fluid" src="img/news/n01.jpg"/>
+                                     <h4 class="news-title">HỘI THẢO “PHƯƠNG PHÁP MỚI ĐỂ ĐÁNH GIÁ NHỮNG RỦI RO VỀ TIM MẠCH VÀ ĐÁNH GIÁ ĐIỂM VÔI HÓA XƠ VỮA ĐỘNG MẠCH VÀNH”</h4>
+                                    <span class="news-text">Mọi công ty và hợp đồng bảo hiểm đều khác nhau và tìm hiểu kỹ hợp đồng là điều rất quan trọng. Hãy tìm hiểu về các trường hợp loại trừ phổ biến, không được bồi thường tùy vào từng hợp đồng bảo hiểm của Bệnh viện</span>
+                                </div>
+                                 <div class="col-lg-4 col-md-6 news-item">
+                                     <img class="img-fluid" src="img/news/new01.jpg"/>
+                                     <h4 class="news-title">HỘI THẢO “PHƯƠNG PHÁP MỚI ĐỂ ĐÁNH GIÁ NHỮNG RỦI RO VỀ TIM MẠCH VÀ ĐÁNH GIÁ ĐIỂM VÔI HÓA XƠ VỮA ĐỘNG MẠCH VÀNH”</h4>
                                     <span class="news-text">Mọi công ty và hợp đồng bảo hiểm đều khác nhau và tìm hiểu kỹ hợp đồng là điều rất quan trọng. Hãy tìm hiểu về các trường hợp loại trừ phổ biến, không được bồi thường tùy vào từng hợp đồng bảo hiểm của Bệnh viện</span>
                                 </div>
                             </div>
-                            <
+                            <nav class="pagination-a">
+                                <ul class="pagination justify-content-end">
+                                  <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">
+                                      <span class="ion-ios-arrow-back"></span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                  </li>
+                                  <li class="page-item active">
+                                    <a class="page-link" href="#">2</a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                  </li>
+                                  <li class="page-item next">
+                                    <a class="page-link" href="#">
+                                      <span class="ion-ios-arrow-forward"></span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
                         </div>
                         <div class="tab-pane" id="tabs-2" role="tabpanel">
                             <p>Second Panel</p>
@@ -163,7 +204,9 @@
                         <div class="tab-pane" id="tabs-3" role="tabpanel">
                             <p>Third Panel</p>
                         </div>
-                    </div>
+                    
+                    </div> 
+                    <!-- tab content -->
                 </div>
             </section>
        </div>
@@ -250,7 +293,7 @@
         </div>
     </div>
 </footer>
-<div class="chat"><img src="icon/chat-bottom.svg" alt="">Bạn cần tư vấn ?</div>
+<div class="chat"><img src="icon/chat-bottom.png" alt="">Bạn cần tư vấn ?</div>
 <!--/ Footer End /-->
 <!--/ Footer End /-->
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
