@@ -1,5 +1,6 @@
 
 /***** Top content *****/
+
 .mr-80{margin-top: 80px;margin-bottom: 80px;}
 .header-sub-bg {
     width: 100%;
@@ -31,10 +32,23 @@
     text-align: center;
     margin-bottom: 50px;
 }
-.title-box span{font-weight: bold;}
+.title-box span{font-weight: bold;font-size: 18px;}
 .sub-title{text-align: center;padding-top: 20px;
     padding-bottom: 30px;
 }
+.page-link{
+    border: 0;
+    height: 35px;
+    width: 35px;
+    line-height: 30px;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+.page-item.active .page-link{
+    background: linear-gradient(to left,#42a8f0,#2d5c93);border-radius: 50%
+}
+
 .grey-bg{background: #c2cbd4 !important;}
 .title-boxout-box{
     margin:  30px 0;
@@ -43,12 +57,14 @@
 .about .owl-carousel .owl-item img {
     display: block;
     width: 100%;
-    height: 600px;
+    height: 550px;
     object-fit: cover;
     z-index: 9;
     position: relative;
 }
 .about-doc-info{padding-top:40%;}
+.about-doc-info h3{color:#3066a0;font-weight: bold;}
+.about-doc-info h4{font-weight: bold;}
 .about-intro{
     color: #ffffff !important;
     background: linear-gradient(to left, #42a8f0, #2f639c);
@@ -72,14 +88,19 @@
 }
 .about-box::after{
     content: "";
-    border: 1px dotted #3f9de2;
+    border: 1px dashed #3372ae;
     width: 100%;
     position: absolute;
     top: 50%;
     z-index: 0;
 }
 .about-doc-img img{position: relative;z-index: 9;}
-.about-staff{margin: 80px 0;    padding: 0 15%;}
+.about-staff{
+    margin: 80px 0;
+    padding: 35px 15%;
+    border: 2px dashed #3372ae;
+    border-radius: 20px;
+}
 .about-box .owl-carousel .owl-stage-outer{position: relative;}
 .about .owl-arrow .owl-nav{
     position: absolute;
@@ -122,7 +143,7 @@
   z-index:2;
 }
 .video-poster{
-    background: url('../img/news/8.jpg');
+    background: url('../img/news/8.jpg') 100%;
       background-repeat: no-repeat;
       position: absolute;
       width: 100%;
@@ -146,7 +167,7 @@
     left: -100px;
     position: absolute;
     border-radius: 50%;
-    opacity: .6;
+    opacity: .4;
 }
 .small-circle{
     height: 160px;
@@ -235,7 +256,7 @@
 .wrap-search {
     width: 92%;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     max-width: 550px;
     min-width: 270px;
 }
@@ -245,11 +266,13 @@
 .search-sec{
     background: #ebebeb;
 }
+.search-sec .sub-title{padding-top: 50px;}
 .search select{
     width: 100%;
     height: 40px;
     color: #777;
     border: 1px solid #ddd;
+    padding-left: 20px;
 }
 .searchTerm {
     float: left;
@@ -299,29 +322,42 @@
 .doctor-item{
     border: 5px solid #dee2e6;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     background: #fff;
+    border-radius: 12px;
 }
 /* NEWS */
 .news-title{
     font-size: 16px;
 }
-.news-list img{
-    height: 230px;
-    width: 100%;
+.news-date{color:#777;    margin-bottom: 20px;}
+.news-date span{font-size: 14px;}
+.news-list .news-item-img img{
+    height: 150px;
+    width: 250px;
     object-fit: cover;
-    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.news-item-img{margin-right: 20px;}
+.news-icon{
+    width: 20px !important;
+    height: auto !important;
+    opacity: .5 !important;
 }
 .news-item{
     margin-bottom: 30px;
+    display: flex;
+    margin-bottom: 60px;
+}
+.btn-stroke-dark img{
+        width: 20px;
+    opacity: .5;
 }
 #exTab1 .tab-content {
   color : white;
   background-color: #428bca;
   padding : 5px 15px;
 }
-
-/* remove border radius for the tab */
 
 #exTab1 .nav-pills > li > a {
   border-radius: 0;
@@ -340,7 +376,8 @@
     color: #fff;
     padding: 20px;
 }
-.news-page .tab-content{padding: 60px 0;}
+.news-page .nav-tabs .nav-item{margin-bottom: -2px;}
+.news-page .tab-content{padding: 90px 0;}
 .news-page .nav-tabs .nav-link.active{
     background: linear-gradient(to left, #42a8f0, #2d5c93);
     color: #fff;
@@ -388,4 +425,12 @@
 @media (max-width:768px){
     .specialist-item{margin-bottom: 20px;}
     .right-content{margin-top: 30px;}
+}
+@media (max-width:992px){
+    .news-item{flex-wrap: wrap;}
+    .news-list .news-item-img img {
+        margin-bottom: 15px;
+        height: 150px;
+        width: 100%;
+    }
 }

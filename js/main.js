@@ -1,6 +1,25 @@
 (function ($) {
   "use strict";
-  
+	$('#news-testimonials').owlCarousel( {
+		loop: true,
+	    margin: 30,
+	    dots: true,
+	    nav: true,
+	    items: 2,
+	 	 autoplay: true,
+		autoplayTimeout: 8500,
+		smartSpeed: 450,
+  		navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1
+			},
+			1170: {
+				items: 2
+			}
+			
+		}
+	});
   // Preloader
   $(window).on('load', function () {
     if ($('#preloader').length) {
@@ -147,56 +166,34 @@
 		}
 	});
 
+	$(".vpop").on('click', function(e) {
+	  e.preventDefault();
+	  $("#video-popup-overlay,#video-popup-iframe-container,#video-popup-container,#video-popup-close").show();
+	  
+	  var srchref='',autoplay='',id=$(this).data('id');
+	  if($(this).data('type') == 'vimeo') var srchref="//player.vimeo.com/video/";
+	  else if($(this).data('type') == 'youtube') var srchref="https://www.youtube.com/embed/";
+	  
+	  if($(this).data('autoplay') == true) autoplay = '?autoplay=1';
+	  
+	  $("#video-popup-iframe").attr('src', srchref+id+autoplay);
+	  
+	  $("#video-popup-iframe").on('load', function() {
+	    $("#video-popup-container").show();
+	  });
+	});
+
+	$("#video-popup-close, #video-popup-overlay").on('click', function(e) {
+	  $("#video-popup-iframe-container,#video-popup-container,#video-popup-close,#video-popup-overlay").hide();
+	  $("#video-popup-iframe").attr('src', '');
+	});
+
+
 })(jQuery);
 
-
-jQuery(document).ready(function($) {
-"use strict";
-$('#customers-testimonials').owlCarousel( {
-		loop: true,
-	    margin: 30,
-	    dots: true,
-	    nav: true,
-	    items: 2,
-	 	 autoplay: true,
-		autoplayTimeout: 8500,
-		smartSpeed: 450,
-  		navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-		responsive: {
-			0: {
-				items: 1
-			},
-			1170: {
-				items: 2
-			}
-			
-		}
-	});
-});
 AOS.init({
 	easing: 'ease',
 	duration: 1000,
 	once: true
 });
 
-$(".vpop").on('click', function(e) {
-  e.preventDefault();
-  $("#video-popup-overlay,#video-popup-iframe-container,#video-popup-container,#video-popup-close").show();
-  
-  var srchref='',autoplay='',id=$(this).data('id');
-  if($(this).data('type') == 'vimeo') var srchref="//player.vimeo.com/video/";
-  else if($(this).data('type') == 'youtube') var srchref="https://www.youtube.com/embed/";
-  
-  if($(this).data('autoplay') == true) autoplay = '?autoplay=1';
-  
-  $("#video-popup-iframe").attr('src', srchref+id+autoplay);
-  
-  $("#video-popup-iframe").on('load', function() {
-    $("#video-popup-container").show();
-  });
-});
-
-$("#video-popup-close, #video-popup-overlay").on('click', function(e) {
-  $("#video-popup-iframe-container,#video-popup-container,#video-popup-close,#video-popup-overlay").hide();
-  $("#video-popup-iframe").attr('src', '');
-});

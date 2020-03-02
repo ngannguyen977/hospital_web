@@ -10,7 +10,6 @@
         <link href="img/favicon.png" rel="icon">
         <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
         <!-- Google Fonts -->
-       <!--  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
         <!-- Bootstrap CSS File -->
@@ -28,8 +27,7 @@
         
         ======================================================= -->
     </head>
-    <body>
-        
+    <body onload="myFunction()">
         <!--/ MAIN MENU/-->
         <div class="top-navbar">
             <a class="pull-left flex-display"><i class="flaticon-pulse"></i><span class="sm-none">CỔNG THÔNG TIN</span></a>
@@ -75,7 +73,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">VỀ CHÚNG TÔI</a>
                         </li>
-                       <li class="nav-item dropdown">
+                        <li class="nav-item dropdown">
                             
                             <a  class="nav-link btn btn-default dropdown-toggle" id="navbarDropdown">
                                 THÔNG TIN CHO BỆNH NHÂN
@@ -148,8 +146,8 @@
                                 <h3>PERFECT HOSPITAL</h3>
                             </div>
                             <div class="video-img">
-                                <a 
-                                   data-type="youtube" data-id="6xcG6ttMDVY" data-autoplay='true'
+                                <a
+                                    data-type="youtube" data-id="6xcG6ttMDVY" data-autoplay='true'
                                     class="video-banner js-trigger-video-modal vpop"
                                     >
                                     <img
@@ -210,58 +208,57 @@
         </div>
     </div>
     <!-- video modal -->
-<!-- copy this stuff and down -->
-<div id="video-popup-overlay"></div>
-
-<div id="video-popup-container">
-  <div id="video-popup-close" class="fade">&#10006;</div>
-  <div id="video-popup-iframe-container">
-    <iframe id="video-popup-iframe" src="" width="100%" height="100%" frameborder="0"></iframe>
-  </div>
-</div>
-<!-- end video modal -->
+    <!-- copy this stuff and down -->
+    <div id="video-popup-overlay"></div>
+    <div id="video-popup-container">
+        <div id="video-popup-close" class="fade">&#10006;</div>
+        <div id="video-popup-iframe-container">
+            <iframe id="video-popup-iframe" src="" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+    <!-- end video modal -->
 </section>
 <!-- form -->
 <!-- service tab -->
 <section class="specialist">
-<div class="container">
-    <div class="">
-        <div class="foo">
-            <nav>
-                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="flaticon-care"></i><br>TIM MẠCH</a>
-                    
-                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="flaticon-ear"></i><br>TAI MŨI HỌNG</a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="flaticon-stomach"></i><br>TIÊU HÓA</a>
-                    <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false"><i class="flaticon-bone"></i><br>XƯƠNG KHỚP</a>
-                </div>
-            </nav>
-            <div class="tab-content main-tab" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class="">
-                        <div class="tab-txt">
-                            <h3>CHỨNG NHẬN</h3>
-                            <h2>PHÒNG KHÁM ĐA KHOA <br>ĐẠT TIÊU CHUẨN</h2>
-                            
-                            <p>Với hơn 50 giường bệnh cho bệnh nhi</p>
-                            <a class="red-btn">XEM CHI TIẾT</a>
+    <div class="container">
+        <div class="">
+            <div class="foo">
+                <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="flaticon-care"></i><br>TIM MẠCH</a>
+                        
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="flaticon-ear"></i><br>TAI MŨI HỌNG</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="flaticon-stomach"></i><br>TIÊU HÓA</a>
+                        <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false"><i class="flaticon-bone"></i><br>XƯƠNG KHỚP</a>
+                    </div>
+                </nav>
+                <div class="tab-content main-tab" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="">
+                            <div class="tab-txt">
+                                <h3>CHỨNG NHẬN</h3>
+                                <h2>PHÒNG KHÁM ĐA KHOA <br>ĐẠT TIÊU CHUẨN</h2>
+                                
+                                <p>Với hơn 50 giường bệnh cho bệnh nhi</p>
+                                <a class="red-btn">XEM CHI TIẾT</a>
+                            </div>
                         </div>
                     </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <img src="img/services/ser01.jpg" alt="">
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <img src="img/services/ser01.jpg" alt="">
+                    </div>
+                    <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                        <img src="img/services/ser01.jpg" alt="">
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <img src="img/services/ser01.jpg" alt="">
-                </div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <img src="img/services/ser01.jpg" alt="">
-                </div>
-                <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-                    <img src="img/services/ser01.jpg" alt="">
-                </div>
+                
             </div>
-            
         </div>
     </div>
-</div>
 </div>
 </div>
 </section>
@@ -269,47 +266,46 @@
 <section class="workflow-content">
 <div class='container'>
 <div class="">
-<div class="workflow">
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xl-6 wr-50">
-        <div class="wf-item foo">
-            <i class="flaticon-cardiogram"></i><br>ĐẶT HẸN TRỰC TUYẾN
+    <div class="workflow">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xl-6 wr-50">
+            <div class="wf-item foo">
+                <i class="flaticon-cardiogram"></i><br>ĐẶT HẸN TRỰC TUYẾN
+            </div>
+        </div>
+        <i class="arrow-ico fa fa-play" aria-hidden="true"></i>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xl-6 wr-50">
+            <div class="wf-item foo">
+                <i class="flaticon-shopping-list"></i><br>THỦ TỤC KHÁM
+            </div>
+        </div>
+        <i class="arrow-ico fa fa-play" aria-hidden="true"></i>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xl-6 wr-50">
+            <div class="wf-item foo">
+                <i class="flaticon-stethoscope"></i><br>THĂM KHÁM
+            </div>
+        </div>
+        <i class="arrow-ico fa fa-play" aria-hidden="true"></i>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xl-6 wr-50">
+            <div class="wf-item foo"> <i class="flaticon-pill"></i><br>NHẬN KẾT QUẢ</div>
         </div>
     </div>
-    <i class="arrow-ico fa fa-play" aria-hidden="true"></i>
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xl-6 wr-50">
-        <div class="wf-item foo">
-            <i class="flaticon-shopping-list"></i><br>THỦ TỤC KHÁM
-        </div>
-    </div>
-    <i class="arrow-ico fa fa-play" aria-hidden="true"></i>
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xl-6 wr-50">
-        <div class="wf-item foo">
-            <i class="flaticon-stethoscope"></i><br>THĂM KHÁM
-        </div>
-    </div>
-    <i class="arrow-ico fa fa-play" aria-hidden="true"></i>
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xl-6 wr-50">
-        <div class="wf-item foo"> <i class="flaticon-pill"></i><br>NHẬN KẾT QUẢ</div>
-    </div>
-</div>
 </div>
 </div>
 </section>
 <section class="package">
 <div class="container">
 <div class="row">
-<div class='col-md-5 col-sm-4'><img class="pack-img foo" src="img/slide/doctor03.png" alt=""></div>
-
-<div class="col-md-7 col-sm-8 foo">
-    <div class="pack-info">
-        <h4>GÓI KHÁM BỆNH</h4>
-        <h2>DÀNH CHO CÔNG TY</h2>
-        <p>
-            Perfect Hopistal mang đến những gói khám toàn diện,
-        phù hợp với từng đối tượng: cá nhân, gia đình và doanh nghiệp.</p>
-        <a class="red-btn" type="">XEM CHI TIẾT</a>
+    <div class='col-md-5 col-sm-4'><img class="pack-img foo" src="img/slide/doctor03.png" alt=""></div>
+    <div class="col-md-7 col-sm-8 foo">
+        <div class="pack-info">
+            <h4>GÓI KHÁM BỆNH</h4>
+            <h2>DÀNH CHO CÔNG TY</h2>
+            <p>
+                Perfect Hopistal mang đến những gói khám toàn diện,
+            phù hợp với từng đối tượng: cá nhân, gia đình và doanh nghiệp.</p>
+            <a class="red-btn" type="">XEM CHI TIẾT</a>
+        </div>
     </div>
-</div>
 </div>
 </div>
 </section>
@@ -317,48 +313,48 @@
 <section class="doctor">
 <div class="container">
 <div class="sec-title">
-<h3 class="txt-big"> <p>ĐỘI NGŨ BÁC SĨ</p> PERFECT HOSPITAL</h3>
+    <h3 class="txt-big"> <p>ĐỘI NGŨ BÁC SĨ</p> PERFECT HOSPITAL</h3>
 </div>
 <div class="row">
-<div class="col-lg-4 col-md-4 foo">
-    <div class=" doc-item">
-        <div class="doc-img">
-            <img class="img-fluid" src="img/doctors/doctor04.png" alt="">
+    <div class="col-lg-4 col-md-4 foo">
+        <div class=" doc-item">
+            <div class="doc-img">
+                <img class="img-fluid" src="img/doctors/doctor04.png" alt="">
+            </div>
+            <div class="doc-info">
+                <p class="doc-name">VÕ NGỌC DIỆP</p>
+                <p class="doc-level">Bác sĩ</p>
+                <p class="doc-des">Có kinh nghiệm hoạt động 5 năm trong ngành</p>
+            </div>
+            <a class="btn-gradient" href="" title="">ĐẶT NGAY</a>
         </div>
-        <div class="doc-info">
-            <p class="doc-name">VÕ NGỌC DIỆP</p>
-            <p class="doc-level">Bác sĩ</p>
-            <p class="doc-des">Có kinh nghiệm hoạt động 5 năm trong ngành</p>
-        </div>
-        <a class="btn-gradient" href="" title="">ĐẶT NGAY</a>
     </div>
-</div>
-<div class="col-lg-4 col-md-4 foo">
-    <div class=" doc-item">
-        <div class="doc-img">
-            <img class="img-fluid" src="img/doctors/doctor04.png" alt="">
+    <div class="col-lg-4 col-md-4 foo">
+        <div class=" doc-item">
+            <div class="doc-img">
+                <img class="img-fluid" src="img/doctors/doctor04.png" alt="">
+            </div>
+            <div class="doc-info">
+                <p class="doc-name">VÕ NGỌC DIỆP</p>
+                <p class="doc-level">Bác sĩ</p>
+                <p class="doc-des">Có kinh nghiệm hoạt động 5 năm trong ngành</p>
+            </div>
+            <a class="btn-gradient" href="" title="">ĐẶT NGAY</a>
         </div>
-        <div class="doc-info">
-            <p class="doc-name">VÕ NGỌC DIỆP</p>
-            <p class="doc-level">Bác sĩ</p>
-            <p class="doc-des">Có kinh nghiệm hoạt động 5 năm trong ngành</p>
-        </div>
-        <a class="btn-gradient" href="" title="">ĐẶT NGAY</a>
     </div>
-</div>
-<div class="col-lg-4 col-md-4 foo">
-    <div class=" doc-item">
-        <div class="doc-img">
-            <img class="img-fluid" src="img/doctors/doctor04.png" alt="">
+    <div class="col-lg-4 col-md-4 foo">
+        <div class=" doc-item">
+            <div class="doc-img">
+                <img class="img-fluid" src="img/doctors/doctor04.png" alt="">
+            </div>
+            <div class="doc-info">
+                <p class="doc-name">VÕ NGỌC DIỆP</p>
+                <p class="doc-level">Bác sĩ</p>
+                <p class="doc-des">Có kinh nghiệm hoạt động 5 năm trong ngành</p>
+            </div>
+            <a class="btn-gradient" href="" title="">ĐẶT NGAY</a>
         </div>
-        <div class="doc-info">
-            <p class="doc-name">VÕ NGỌC DIỆP</p>
-            <p class="doc-level">Bác sĩ</p>
-            <p class="doc-des">Có kinh nghiệm hoạt động 5 năm trong ngành</p>
-        </div>
-        <a class="btn-gradient" href="" title="">ĐẶT NGAY</a>
     </div>
-</div>
 </div>
 </div>
 </section>
@@ -366,126 +362,121 @@
 <section class="news">
 <div class="container">
 <div class="">
-<div class="news-top">
-    <div class="col-lg-8 col-md-12 col-sm-12 foo w100">
-        <div class="n-left">
-            <div class="sec-title">
-                <h3 class="txt-big"><span>THÔNG TIN</span> Y KHOA</h3>
-            </div>
-            <div class="testimonials">
-                
-                <div id="customers-testimonials" class="owl-carousel">
-                    <!--TESTIMONIAL 1 -->
-                    <div class="item">
-                        <div class="shadow-effect">
-                            <img class="img-fluid" src="img/news/8.jpg" alt="">
-                            <div class="item-details">
-                                <h5>NHỮNG THÔNG TIN PHỤ HUYNH CẦN BIẾT VỀ VIỆC TIÊM VACCINE CHO TRẺ</h5>
-                                <p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
-                                <a class="btn-gradient" href="" title="">XEM THÊM</a>
+    <div class="news-top">
+        <div class="col-lg-8 col-md-12 col-sm-12 foo w100">
+            <div class="n-left">
+                <div class="sec-title">
+                    <h3 class="txt-big"><span>THÔNG TIN</span> Y KHOA</h3>
+                </div>
+                <div class="news-list">
+                    <div id="news-testimonials" class="owl-carousel">
+                        <!--TESTIMONIAL 1 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-fluid" src="img/news/8.jpg" alt="">
+                                <div class="item-details">
+                                    <h5>NHỮNG THÔNG TIN PHỤ HUYNH CẦN BIẾT VỀ VIỆC TIÊM VACCINE CHO TRẺ</h5>
+                                    <p>Theo đó, Bộ Y tế khuyến cáo người dân chỉ nên đeo khẩu trang y tế trong 3 trường hợp: Khi tiếp xúc</p>
+                                    <a class="btn-gradient" href="" title="">XEM THÊM</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!--END OF TESTIMONIAL 1 -->
-                    <!--TESTIMONIAL 2 -->
-                    <div class="item">
-                        <div class="shadow-effect">
-                            <img class="img-fluid" src="img/news/n02.jpg" alt="">
-                            <div class="item-details">
-                                <h5>NHỮNG THÔNG TIN PHỤ HUYNH CẦN BIẾT VỀ VIỆC TIÊM VACCINE CHO TRẺ</h5>
-                                <p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
-                                <a class="btn-gradient" href="" title="">XEM THÊM</a>
+                        <!--END OF TESTIMONIAL 1 -->
+                        <!--TESTIMONIAL 2 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-fluid" src="img/news/n02.jpg" alt="">
+                                <div class="item-details">
+                                    <h5>NHỮNG THÔNG TIN PHỤ HUYNH CẦN BIẾT VỀ VIỆC TIÊM VACCINE CHO TRẺ</h5>
+                                    <p>Theo đó, Bộ Y tế khuyến cáo người dân chỉ nên đeo khẩu trang y tế trong 3 trường hợp: Khi tiếp xúc.</p>
+                                    <a class="btn-gradient" href="" title="">XEM THÊM</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!--END OF TESTIMONIAL 2 -->
-                    <!--TESTIMONIAL 3 -->
-                    <div class="item">
-                        <div class="shadow-effect">
-                            <img class="img-fluid" src="img/news/n01.jpg" alt="">
-                            <div class="item-details">
-                                <h5>NHỮNG THÔNG TIN PHỤ HUYNH CẦN BIẾT VỀ VIỆC TIÊM VACCINE CHO TRẺ</h5>
-                                <p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
-                                <a class="btn-gradient" href="" title="">XEM THÊM</a>
+                        <!--END OF TESTIMONIAL 2 -->
+                        <!--TESTIMONIAL 3 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-fluid" src="img/news/n01.jpg" alt="">
+                                <div class="item-details">
+                                    <h5>NHỮNG THÔNG TIN PHỤ HUYNH CẦN BIẾT VỀ VIỆC TIÊM VACCINE CHO TRẺ</h5>
+                                    <p>Theo đó, Bộ Y tế khuyến cáo người dân chỉ nên đeo khẩu trang y tế trong 3 trường hợp: Khi tiếp xúc</p>
+                                    <a class="btn-gradient" href="" title="">XEM THÊM</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!--END OF TESTIMONIAL 3 -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 col-md-12 col-sm-12 foo w100">
-        <div class="n-right">
-            <div class="sec-title">
-                <h3 class="txt-big"><span>TIN NÓNG</span> 24H</h3>
-            </div>
-            <div class="item news-right">
-                <img class="img-fluid news-img" src="img/news/new01.jpg" alt="tin tuc corona" />
-                <div class="news-info">
-                    <h4 class="news-title">Bộ Y tế khuyến cáo chỉ 3 trường hợp này mới nên đeo khẩu trang y tế</h4>
-                    <p>Theo đó, Bộ Y tế khuyến cáo người dân chỉ nên đeo khẩu trang y tế trong 3 trường hợp: Khi tiếp xúc</p>
-                    <a class="btn-no-border" href="" title="">XEM THÊM<img src="icon/arrow-light.svg" alt=""></a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <div class="cleafix"></div>
-</div>
-<div class="news-bottom foo">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="news-bottom-item">
-                    <img src="img/news/n01.jpg" />
-                    <div class="news-bottom-info">
-                        <h5>Bộ Y tế khuyến cáo chỉ 3 trường hợp này mới nên đeo khẩu trang y tế</h5>
-                        <a class="btn-stroke" href="" title="">XEM THÊM</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="news-bottom-item">
-                    <img src="img/news/n02.jpg" />
-                    <div class="news-bottom-info">
-                        <h5>Bộ Y tế khuyến cáo chỉ 3 trường hợp này mới nên đeo khẩu trang y tế</h5>
-                        <a class="btn-stroke" href="" title="">XEM THÊM</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="news-bottom-item">
-                    <img src="img/news/n01.jpg" />
-                    <div class="news-bottom-info">
-                        <h5>Bộ Y tế khuyến cáo chỉ 3 trường hợp này mới nên đeo khẩu trang y tế</h5>
-                        <a class="btn-stroke" href="" title="">XEM THÊM</a>
+                        <!--END OF TESTIMONIAL 3 -->
                     </div>
                 </div>
             </div>
         </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 foo w100">
+            <div class="n-right">
+                <div class="sec-title">
+                    <h3 class="txt-big"><span>TIN NÓNG</span> 24H</h3>
+                </div>
+                <div class="item news-right">
+                    <img class="img-fluid news-img" src="img/news/new01.jpg" alt="tin tuc corona" />
+                    <div class="news-info">
+                        <h4 class="news-title">Bộ Y tế khuyến cáo chỉ 3 trường hợp này mới nên đeo khẩu trang y tế</h4>
+                        <p>Theo đó, Bộ Y tế khuyến cáo người dân chỉ nên đeo khẩu trang y tế trong 3 trường hợp: Khi tiếp xúc</p>
+                        <a class="btn-no-border" href="" title="">XEM THÊM<img src="icon/arrow-light.svg" alt=""></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="cleafix"></div>
     </div>
-</div>
+    <div class="news-bottom foo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="news-bottom-item">
+                        <img src="img/news/n01.jpg" />
+                        <div class="news-bottom-info">
+                            <h5>Bộ Y tế khuyến cáo chỉ 3 trường hợp này mới nên đeo khẩu trang y tế</h5>
+                            <a class="btn-stroke" href="" title="">XEM THÊM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="news-bottom-item">
+                        <img src="img/news/n02.jpg" />
+                        <div class="news-bottom-info">
+                            <h5>Bộ Y tế khuyến cáo chỉ 3 trường hợp này mới nên đeo khẩu trang y tế</h5>
+                            <a class="btn-stroke" href="" title="">XEM THÊM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="news-bottom-item">
+                        <img src="img/news/n01.jpg" />
+                        <div class="news-bottom-info">
+                            <h5>Bộ Y tế khuyến cáo chỉ 3 trường hợp này mới nên đeo khẩu trang y tế</h5>
+                            <a class="btn-stroke" href="" title="">XEM THÊM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 </section>
 <!--/ footer Star /-->
-<div class="new-letter">
-<div class="container"></div>
-</div>
 <section class="partner">
-<div class="container">
-<div class="partner-list foo">
-<span><img class="img-fluid" src="img/partner/01.png" /></span>
-<span><img class="img-fluid" src="img/partner/01.png" /></span>
-<span><img class="img-fluid" src="img/partner/01.png" /></span>
-
-</div>
-</div>
+    <div class="container">
+    <div class="partner-list foo">
+        <span><img class="img-fluid" src="img/partner/01.png" /></span>
+        <span><img class="img-fluid" src="img/partner/01.png" /></span>
+        <span><img class="img-fluid" src="img/partner/01.png" /></span>
+    </div>
+    </div>
 </section>
 <footer>
-    <div class="footer-content">
-    <div class="container">
+<div class="footer-content">
+<div class="container">
     <div class="row footer-top">
         <div class="col-md-6">
             <div class="footer-left">
@@ -525,8 +516,8 @@
             </div>
         </div>
     </div>
-    </div>
-    <div class="copyright-footer">
+</div>
+<div class="copyright-footer">
     <div class="socials-a">
         <ul class="list-inline">
             <li class="list-inline-item">
@@ -560,13 +551,22 @@
         &copy; Copyright
         <span class="color-a">Perfect Hospital</span> All Rights Reserved.
     </p>
-    </div>
-    </div>
+</div>
+</div>
 </footer>
 <div class="chat"><img src="icon/chat-bottom.png" alt=""></div>
 <!--/ Footer End /-->
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<div id="preloader"></div>
+<div id="loader">
+    <div class="heart-rate">
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73" xml:space="preserve">
+        <polyline fill="none" stroke="#009B9E" stroke-width="3" stroke-miterlimit="10" points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486"
+        />
+      </svg>
+      <div class="fade-in"></div>
+      <div class="fade-out"></div>
+    </div>
+</div>
 <!-- JavaScript Libraries -->
 <script src="lib/jquery/jquery.min.js"></script>
 <!-- <script src="lib/jquery/jquery-migrate.min.js"></script> -->
@@ -580,5 +580,18 @@
 <script src="contactform/contactform.js"></script>
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
+<script>
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 6000);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+</script>
+
 </body>
 </html>
