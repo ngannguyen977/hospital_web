@@ -2106,6 +2106,7 @@ footer .credits {
     border-radius: 30px;
     color: #333;
     padding: 3px 20px;
+    font-size: 15px;
 }
 
 @media (min-width:576px) {
@@ -2146,7 +2147,7 @@ footer .credits {
         border-left: 0;
         display: block;
         position: absolute;
-        /* top: 58px; */
+        top: 58px;
         border-top: 1px solid #40a1e7;
     }
 
@@ -2162,21 +2163,10 @@ footer .credits {
         font-size: 1.5rem;
     }
 
-    .title-c {
-        font-size: 1.8rem;
-    }
-
     .about-img-box {
         padding-left: 5rem;
     }
 
-    .sinse-box {
-        padding: 1.5rem 3rem;
-    }
-
-    .sinse-box .sinse-title {
-        font-size: 1.8rem;
-    }
 
 }
 
@@ -2204,10 +2194,11 @@ footer .credits {
     .news .owl-carousel .owl-item img {
         height: 260px;
     }
-
+    
 }
 
 @media (max-width:1200px) {
+    .hotline{display: none;}
     .news-bottom-item {
         margin-top: 20px;
     }
@@ -2243,6 +2234,9 @@ footer .credits {
 
     .navbar-default.navbar-trans .nav-link, .navbar-default.navbar-reduce .nav-link {
         font-size: 13px;
+    }
+    .navbar {
+        padding: .5rem 5%;
     }
 
 }
@@ -2409,15 +2403,10 @@ footer .credits {
         width: 100px;
         padding: 15px;
     }
-
+    .navbar, .top-navbar {padding: 0 5px !important;}
     .box-collapse .title-box-d {
         left: 35px;
     }
-
-    .box-collapse .title-box-d .title-d {
-        font-size: 1.3rem;
-    }
-
     .pack-info {
         position: relative;
     }
@@ -2537,11 +2526,5 @@ footer .credits {
 
 @media (min-width:320px) {
 
-    /*.dropdown-menu {
-        border-left: 0;
-        display: block;
-        position: absolute;
-        top: 58px;
-        border-top: 1px solid #40a1e7;
-    }*/
+    
 }

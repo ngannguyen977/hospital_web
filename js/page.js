@@ -1,9 +1,6 @@
-$('#carousel-example').on('slide.bs.carousel', function (e) {
 
-      /*
-          CC 2.0 License Iatek LLC 2018
-          Attribution required
-      */
+jQuery(document).ready(function() {
+  $('#carousel-example').on('slide.bs.carousel', function (e) {
       var $e = $(e.relatedTarget);
       var idx = $e.index();
       var itemsPerSlide = 5;
@@ -22,7 +19,6 @@ $('#carousel-example').on('slide.bs.carousel', function (e) {
           }
       }
   });
-jQuery(document).ready(function() {
   jQuery('.play i').click(function(event){
      event.preventDefault();
      $(".js-video").append('<iframe width="940" height="529" src="https://www.youtube.com/embed/ZsCL47eqgrs?autoplay=1" frameborder="0" allowfullscreen></iframe>');
