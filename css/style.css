@@ -855,7 +855,7 @@ nav > div a.nav-item.nav-link:hover, nav > div a.nav-item.nav-link:focus {
 
 .top-navbar  img {
     width: 20px;
-    margin-right: 0;
+    margin-right: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -986,14 +986,26 @@ nav > div a.nav-item.nav-link:hover, nav > div a.nav-item.nav-link:focus {
 .sl-nav li ul {
     display: none;
 }
-
+.item-dropdown a{
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+}
+.item-dropdown .dropdown-menu{
+    margin-top: 10px;
+    border:0;
+    border-radius: 0;
+    box-shadow: 0 8px 8px 0 rgba(143, 146, 151, 0.11), 0 12px 18px 0 rgba(123, 129, 141, 0.11);
+}
+.item-dropdown .dropdown-menu a{margin-bottom: 10px;}
 .sl-nav li:hover ul {
     position: absolute;
     top: 29px;
     right: -15px;
     display: block;
     background: #fff;
-    width: 120px;
+    min-width: 160px;
+    width: 100%;
     padding-top: 0px;
     z-index: 1;
     border-radius: 5px;
